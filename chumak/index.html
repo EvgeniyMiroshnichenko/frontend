@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Чумак</title>
+
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" type="text/css" />
+
+    <link rel="stylesheet" href="./css/fullpage.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js "></script>
+	<![endif]-->
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="loaderArea">
+        <div class="loader">
+          <span class="logo">
+
+				<img src="./images/logo.png" alt="Чумак">
+
+			</span>
+        </div>
+      </div>
+
+      <header class="header">
+
+        <div class="header-top">
+
+          <div class="logo-wrap">
+            <span class="logo">
+
+					<img src="./images/logo.png" alt="Чумак">
+
+				</span>
+          </div>
+          <p class="tagline">«Дякую» - у кожній пачці</p>
+
+          <button id="nav-trigger" class="nav-trigger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.24 33.98">
+              <path d="M0.61,4.11s9-7,24,0,25-1,25-1" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" />
+              <path d="M0.61,17.11s9-7,24,0,25-1,25-1" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" />
+              <path d="M0.61,30.11s9-7,24,0,25-1,25-1" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" />
+            </svg>
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+        <nav id="nav" class="main-menu">
+
+          <div class="logo-wrap">
+            <span class="logo">
+
+					<img src="./images/logo.png" alt="Чумак">
+
+				</span>
+          </div>
+          <p class="tagline">«Дякую» - у кожній пачці</p>
+
+          <button id="nav-trigger" class="nav-trigger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.74 36.74">
+              <line x1="0.86" y1="36.05" x2="34.8" y2="0.69" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" />
+              <line x1="0.69" y1="1.4" x2="36.05" y2="35.34" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px" />
+            </svg>
+            <span>Свернуть</span>
+          </button>
+
+          <ul>
+            <li><a href="#first"><span class="icon"><img src="./images/icon-1.svg" alt=""></span>Реєструй код</a>
+            </li>
+            <li><a href="#"><span class="icon"><img src="./images/icon-2.svg" alt=""></span>Призи та переможцi</a>
+            </li>
+            <li><a href="#"><span class="icon"><img src="./images/icon-3.svg" alt=""></span>Офіційні правила</a>
+            </li>
+            <li><a href="#"><span class="icon"><img src="./images/icon-4.svg" alt=""></span>Запитання та відповіді</a>
+            </li>
+            <li><a href="#login" data-toggle="modal"><span class="icon"><img src="./images/icon-5.svg" alt=""></span>Вхiд в особистий кабiнет</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <div id="fullpage" class="fullpage">
+
+        <div id="firstScreen" class="section first-screen parallax" data-anchor="first">
+          <div class="container">
+
+            <div class="container-sm">
+              <div class="logo-wrap">
+                <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+              </div>
+              <p class="main-title">Маленьке «дякую» – це крок до здійснення великої мрії</p>
+              <div class="key-form-wrap">
+                <div class="key-form">
+                  <form action="#">
+                    <input type="text" maxlength="12" class="key-input" placeholder="Введiть промокод">
+                    <button class="key-btn"></button>
+                  </form>
+                </div>
+                <div class="over-key">
+                  <p class="title">Реєструйте код</p>
+                  <p>Більше кодів – більше призів</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="leaves">
+            <div class="container">
+              <div class="item-l parallax-layer" data-parallax-deep="200">
+                <img src="./images/leaf-l.png" alt="">
+              </div>
+              <div class="item-r parallax-layer" data-parallax-deep="200">
+                <img src="./images/leaf-r.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="pasta-images">
+            <div class="container">
+              <div class="item-l">
+                <img src="./images/pasta-l.png" alt="">
+              </div>
+              <div class="item-r">
+                <img src="./images/pasta-r.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="stages-box">
+            <a href="#second" class="next-block">вниз</a>
+            <div class="container">
+              <div class="stages-wrap">
+                <div class="stages">
+                  <div class="stage stage-1">
+                    <div class="image">
+                      <img src="./images/stage-1.png" alt="">
+                    </div>
+                    <p>Купуйте <span class="hint" data-toggle="tooltip-stage" title="В Акції беруть участь тільки пачки Спіральки ТМ «Чумак» 400гр з позначкою «Дякую» та акційним кодом всередині">акційні</span>*
+                      <br>макарони <strong>«Чумак»</strong>
+                    </p>
+                  </div>
+                  <div class="stage stage-2">
+                    <div class="image">
+                      <img src="./images/stage-2.png" alt="">
+                    </div>
+                    <p>Реєструйте код
+                      <br>на сайті або в SMS,
+                      <br>Viber або Telegram</p>
+                  </div>
+                  <div class="stage stage-3">
+                    <div class="image">
+                      <img src="./images/stage-3.png" alt="">
+                    </div>
+                    <p>Отримуйте
+                      <br> <strong>Гарантоване</strong>
+                      <br>«Дякую»</p>
+                  </div>
+                  <div class="stage stage-4">
+                    <div class="image">
+                      <img src="./images/stage-4.png" alt="">
+                    </div>
+                    <p>Вигравайте круті подарунки
+                      <br>та <strong>ГОЛОВНИЙ ПРИЗ</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section second-screen parallax" data-anchor="second">
+          <div class="container top-container">
+            <div class="second-screen-head">
+              <div class="animate-board">
+                <p>ПРИЗОВИЙ ФОНД «Чумак»</p>
+              </div>
+            </div>
+            <div class="second-screen-content">
+              <div class="prizes">
+                <div class="prizes-carousel">
+                  <div class="prize-item-wrap key-1 first">
+                    <div class="prize-item">
+                      <div class="mark"><span class="num">1</span> код</div>
+                      <p class="title">Гарантовано</p>
+                      <div class="image">
+                        <img src="./images/prize-1key.png" alt="">
+                      </div>
+                      <p class="desc"><strong>Знижку 10% від партнера <span class="hint" data-toggle="tooltip" title="Промокод на знижку при кожній першій реєстраціїї">*</span><br> <a href="https://leboutique.com" target="_blank">leboutique.com</a></strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="prize-item-wrap key-5 centered">
+                    <div class="prize-item">
+                      <div class="mark"><span class="num">5</span> кодiв</div>
+                      <p class="title">Головний приз</p>
+                      <div class="image">
+                        <img src="./images/prize-5key.png" alt="">
+                      </div>
+                      <p class="desc">На виконання ВАШОЇ <span class="hint" data-toggle="tooltip" title="Кожен 5 зареєстрований код - можливість виграти головний приз акції - 100 000 грн">**</span></span>
+                        <br> <strong>заповітної мрії!</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="prize-item-wrap key-3 last">
+                    <div class="prize-item">
+                      <div class="mark"><span class="num">3</span> коди</div>
+                      <p class="title">2 рази
+                        <br>на тиждень</p>
+                      <div class="image">
+                        <img src="./images/prize-3key.png" alt="">
+                      </div>
+                      <p class="desc"><strong>Сертифiкат на <span class="hint" data-toggle="tooltip" title="Розіграш проводиться 2 рази на тиждень. Кожен 3-й зареєстрований код - шанс отримати один з двох щотижневих сертифікатів">***</span><br> <img src="./images/hrivna5k.png" alt=""></strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="prizes-carousel-nav">
+                  <button class="prize-prev"></button>
+                  <button class="prize-next"></button>
+                </div>
+              </div>
+
+              <div id="prizeHint" class="prize-hint">
+
+              </div>
+
+              <div class="text-bottom">
+                <p>Більше кодів – більше подарунків</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="leaves">
+            <div class="container">
+              <div class="item-l parallax-layer" data-parallax-deep="200">
+                <img src="./images/leaf-l.png" alt="">
+              </div>
+              <div class="item-r parallax-layer" data-parallax-deep="200">
+                <img src="./images/leaf2-r.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="sociale">
+                  <span>Ми у соц мережах:</span>
+                  <a href="#" target="_blank">
+                    <img src="./images/icon-youtube.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="./images/icon-facebook.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="./images/icon-viber.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="./images/icon-telegram.svg" alt="">
+                  </a>
+                </div>
+                <div class="rules">
+                  <a href="#">Повнi правила акцii</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget-button">
+        <div class="widget-button-logo-wrapper">
+          <span class="widget-button-logo"></span>
+        </div>
+        <div class="widget-button-text">Chat with us</div>
+      </div>
+
+    </div>
+
+    <!-- Modal -->
+    <!-- 1. Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Увiйти
+              <br>до особистого кабiнету</p>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="email" name="mail" placeholder="Введiть email" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="pass" placeholder="Пароль*">
+                </div>
+                <div class="recovery-link">
+                  <a href="#">Забули пароль?</a>
+                </div>
+                <div class="text-center">
+                  <input class="btn" type="submit" value="Увiйти">
+                  <a href="#" class="btn btn-bordered">Реестрацiя</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1.1. Login temp (valid) -->
+    <div class="modal fade" id="login-temp" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Увiйти
+              <br>до особистого кабiнету</p>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form action="#">
+                <div class="form-group is-invalid">
+                  <input type="email" name="mail" placeholder="Введiть email" value="">
+                  <div class="valid-feedback">Обов'язкове поле</div>
+                </div>
+                <div class="form-group is-valid">
+                  <input type="password" name="pass" placeholder="Пароль*">
+                </div>
+                <div class="recovery-link">
+                  <a href="#">Забули пароль?</a>
+                </div>
+                <div class="text-center">
+                  <input class="btn" type="submit" value="Увiйти">
+                  <a href="#" class="btn btn-bordered">Реестрацiя</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Регистрация -->
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Зарееструватися</p>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" name="your-name" placeholder="Ваше ім'я" value="">
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="your-tel" placeholder="+38 (0_ _) _ _ _ - _ _ - _ _*" value="">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="your-mail" placeholder="Введiть email*" value="">
+                </div>
+                <div class="form-group date">
+                  <input type="text" name="your-date" placeholder="Дата народження*" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="your-pass" placeholder="Пароль*">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="your-pass2" placeholder="Пiдтвердити пароль*">
+                </div>
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="terms">
+                  <label for="terms">Приймаю умови акції</label>
+                </div>
+                <div class="text-center">
+                  <input class="btn" type="submit" value="Реестрацiя">
+                </div>
+                <div class="form-group text-center">
+                  <a href="#" class="login-link"><em>Увiйти до особистого кабiнету</em></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Возобновление пароля -->
+    <div class="modal fade" id="recovery" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Вiдновити пароль</p>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="email" name="your-mail" placeholder="Введiть email" value="">
+                </div>
+                <div class="text-center">
+                  <input class="btn" type="submit" value="Вiдновити">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Победители -->
+    <div class="modal fade" id="winners" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Це наше «ДЯКУЮ» тобі</p>
+          </div>
+          <div class="modal-body">
+            <div class="winners">
+              <div class="nav" role="tablist">
+                <a class="active" data-toggle="tab" href="#tab-1" role="tab" aria-selected="true">5 000 грн</a>
+                <a class="" data-toggle="tab" href="#tab-2" role="tab" aria-selected="false">
+                  <img src="./images/hrivna100k.png" alt="">
+                </a>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                  <div class="scroll-box">
+                    <table>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                  <div class="scroll-box">
+                    <table>
+                      <tr>
+                        <td>09.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>SMS/Viber/Telegram-користувач</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Тереза</td>
+                      </tr>
+                      <tr>
+                        <td>08.07.2019</td>
+                        <td>Елена</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Особистий кабiнет -->
+    <div class="modal fade" id="myaccount" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Особистий кабiнет</p>
+          </div>
+          <div class="modal-body">
+
+            <div class="account-top">
+              <ul class="my-info">
+                <li>
+                  <span class="title">Ім’я:</span>
+                  <span>Иван</span>
+                </li>
+                <li>
+                  <span class="title">Номер телефону:</span>
+                  <span>+38 093 777 77 77</span>
+                </li>
+                <li>
+                  <span class="title">E-mail:</span>
+                  <span>test@gmail.com</span>
+                </li>
+                <li>
+                  <span class="title">Дата народження:</span>
+                  <span>01.01.2000</span>
+                </li>
+              </ul>
+              <div class="change-pass">
+                <a href="#">Змiнити пароль</a>
+              </div>
+            </div>
+
+            <div class="my-statistic scroll-box">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Код</th>
+                    <th>Виграш</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>7qyhd6kcle</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>58hffkmkdv</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>7qyhd6kcle</td>
+                    <td class="win">5 000 грн</td>
+                  </tr>
+                  <tr>
+                    <td>58hffkmkdv</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>7qyhd6kcle</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>58hffkmkdv</td>
+                    <td class="win">5 000 грн</td>
+                  </tr>
+                  <tr>
+                    <td>7qyhd6kcle</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>58hffkmkdv</td>
+                    <td>Пробуйте ще</td>
+                  </tr>
+                  <tr>
+                    <td>7qyhd6kcle</td>
+                    <td class="win">5 000 грн</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="account-message">
+              <p>Чим більше кодів реєструєш - тим більше шансів виграти головний приз</p>
+            </div>
+
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" name="code" placeholder="Введiть промо-код" value="">
+                </div>
+                <div class="text-center">
+                  <input class="btn" type="submit" value="Вiдправити">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Офіційні правила -->
+    <div class="modal fade" id="officialRules" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Офіційні правила</p>
+          </div>
+          <div class="modal-body">
+            <div class="official-rules">
+              <div class="text-center">
+                <p>Офіційні правила (надалі – «Офіційні правила») Акції «Музика смакує краще з Lay’s» (надалі – Акція)</p>
+              </div>
+              <div class="scroll-box">
+                <h3>1. Загальні положення</h3>
+                <p>1.1 Виконавцем Акції є ТОВ «Фрі Бренд» (надалі - Виконавець), що діє на підставі замовлення ТОВ «Сандора» (надалі - Організатор). Місцезнаходження Виконавця: 04050, м. Київ, вул. Пимоненка, буд. 13-К. Місцезнаходження Організатора: 57262,
+                  Україна, Миколаївська обл., Вітовський р-н, с. Миколаївське.</p>
+                <p>1.2 Акція проводиться з метою популяризації продукції під ТМ «Lay’s». Акція не є лотереєю чи азартною грою.</p>
+                <h3>2. Термінологія та поняття, які використовуються в даних офіційних правилах:</h3>
+                <p>1.1 Виконавцем Акції є ТОВ «Фрі Бренд» (надалі - Виконавець), що діє на підставі замовлення ТОВ «Сандора» (надалі - Організатор). Місцезнаходження Виконавця: 04050, м. Київ, вул. Пимоненка, буд. 13-К. Місцезнаходження Організатора: 57262,
+                  Україна, Миколаївська обл., Вітовський р-н, с. Миколаївське.</p>
+                <p>1.2 Акція проводиться з метою популяризації продукції під ТМ «Lay’s». Акція не є лотереєю чи азартною грою.</p>
+                <h3>3. Термінологія та поняття, які використовуються в даних офіційних правилах:</h3>
+                <p>1.1 Виконавцем Акції є ТОВ «Фрі Бренд» (надалі - Виконавець), що діє на підставі замовлення ТОВ «Сандора» (надалі - Організатор). Місцезнаходження Виконавця: 04050, м. Київ, вул. Пимоненка, буд. 13-К. Місцезнаходження Організатора: 57262,
+                  Україна, Миколаївська обл., Вітовський р-н, с. Миколаївське.</p>
+                <p>1.2 Акція проводиться з метою популяризації продукції під ТМ «Lay’s». Акція не є лотереєю чи азартною грою.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Возобновление пароля (сообщение) -->
+    <div class="modal fade" id="recovery2" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Вiдновлення паролю!</p>
+          </div>
+          <div class="modal-body">
+            <div class="message">
+              <p>Дякуємо! На твою електронну пошту відправлено новий пароль</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Введений код неправильний -->
+    <div class="modal fade" id="wrongKey" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3 warning">Увага!</p>
+          </div>
+          <div class="modal-body">
+            <div class="message">
+              <p>Введенний код невiрний. Будь ласка, перевір код та спробуй ще раз</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Дякуемо -->
+    <div class="modal fade" id="thank" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo-wrap">
+              <span class="logo">
+
+						<img src="./images/logo.png" alt="Чумак">
+
+					</span>
+            </div>
+            <p class="h3">Дякуемо!</p>
+          </div>
+          <div class="modal-body">
+            <div class="message">
+              <p>Для веріфікації коду! Необхідно зареєструватися aбо авторизуйся!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>

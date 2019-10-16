@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MobiDev</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js "></script>
+	<![endif]-->
+
+  </head>
+
+  <body class="home">
+    <div id="wrapper">
+      <!-- <div class="loaderArea">
+		<div class="loader">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.26 51.26"><path d="M41.46,7.08a1.4,1.4,0,0,1-2,.31,23.4,23.4,0,0,0-27.75,0,1.4,1.4,0,0,1-2-.31,1.42,1.42,0,0,1,.31-2,26.19,26.19,0,0,1,31.06,0A1.42,1.42,0,0,1,41.46,7.08ZM17.67,13.83A0.78,0.78,0,0,1,17,13.45a0.79,0.79,0,0,1,.27-1.08,16.27,16.27,0,0,1,16.71,0,0.79,0.79,0,0,1,.27,1.08,0.78,0.78,0,0,1-1.07.27,14.73,14.73,0,0,0-15.11,0A0.77,0.77,0,0,1,17.67,13.83Zm8-6.6A19,19,0,0,0,14.9,10.54a1.09,1.09,0,0,1-1.52-.29,1.11,1.11,0,0,1,.29-1.53,21.23,21.23,0,0,1,23.91,0,1.11,1.11,0,0,1,.29,1.53,1.09,1.09,0,0,1-1.52.29A19,19,0,0,0,25.63,7.23Z" style="fill:#0091ea"/></svg>
+		</div>
+	</div> -->
+
+      <header id="header">
+        <div class="header-main">
+
+          <a class="logo" href="#">
+            <img src="./images/media/logo.png" alt="logo">
+          </a>
+
+          <div class="header-right">
+            <nav id="nav" class="menu-top">
+              <ul>
+                <li><a href="#">Case studies</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Services</a>
+                  <ul>
+                    <li><a href="#">Mobile Apps Development</a>
+                    </li>
+                    <li><a href="#">Web Engineering</a>
+                    </li>
+                    <li><a href="#">Microsoft Web Stack Development</a>
+                    </li>
+                    <li><a href="#">Oracle Tech Stack Development</a>
+                    </li>
+                    <li><a href="#">Management & Processes</a>
+                    </li>
+                    <li><a href="#">UI/UX Design</a>
+                    </li>
+                    <li><a href="#">Quality Assurance</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Innovations</a>
+                  <ul>
+                    <li><a href="#">Hight load cloud infrastructure</a>
+                    </li>
+                    <li><a href="#">Internet of Things</a>
+                    </li>
+                    <li><a href="#">Augmented Reality</a>
+                    </li>
+                    <li><a href="#">Data Science</a>
+                    </li>
+                    <li><a href="#">Test Automation</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">About us</a>
+                  <ul>
+                    <li><a href="#">Mission & values</a>
+                    </li>
+                    <li><a href="#">About us</a>
+                    </li>
+                    <li><a href="#">Our Clients</a>
+                    </li>
+                    <li><a href="#">Our Team</a>
+                    </li>
+                    <li><a href="#">Mobidev charity program</a>
+                    </li>
+                    <li><a href="#">Outsourcing to Ukraine</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">News & Insights</a>
+                  <ul>
+                    <li><a href="#">Newsroom</a>
+                    </li>
+                    <li><a href="#">Meet us on events</a>
+                    </li>
+                    <li><a href="#">Trands & insights</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="nav-trigger" class="nav-trigger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+
+            <button id="searchButton" class="search-button"></button>
+
+            <a href="#" class="contact-us">Contact us</a>
+          </div>
+
+          <div class="search-row header-search">
+            <form>
+              <input type="search" name="search" placeholder="What are you looking for?" value="">
+              <input class="btn" type="submit" value="Search">
+            </form>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="first-screen" style="background-image: url('./images/media/main-image.jpg');">
+        <div class="container">
+
+          <div class="text-center">
+            <div class="wow fadeInRight">
+              <h1>COMPLEX SOFTWARE DEVELOPMENT<br>
+
+				<strong>FOR YOUR BUSINESS</strong></h1>
+            </div>
+
+            <a data-fancybox href="https://www.youtube.com/watch?v=3f2g4RMfhS0" class="watch-video wow fadeInLeft">
+              <span class="icon">
+
+						<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" ><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
+
+					</span>WATCH FULL VIDEO
+            </a>
+          </div>
+
+          <ul class="main-info">
+            <li class="wow fadeIn" data-wow-delay="0s">
+              <span class="icon">9</span>
+              <span class="text">Years in business</span>
+            </li>
+            <li class="wow fadeIn" data-wow-delay=".1s">
+              <span class="icon">350+</span>
+              <span class="text">Products Launched</span>
+            </li>
+            <li class="wow fadeIn" data-wow-delay=".2s">
+              <span class="icon"><img src="./images/media/upwork.png" alt=""></span>
+              <span class="text">Best upwork Software Development Agency</span>
+            </li>
+            <li class="wow fadeIn" data-wow-delay=".3s">
+              <span class="icon">1.2M</span>
+              <span class="text">Hours worked</span>
+            </li>
+            <li class="wow fadeIn" data-wow-delay=".4s">
+              <span class="icon">300+</span>
+              <span class="text">engineers</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <a href="#mainSlider" class="next-block"></a>
+
+      </div>
+
+      <div id="mainSlider" class="carousel-full main-carousel">
+        <div class="item">
+          <div class="image">
+            <img src="./images/media/main-slider.jpg" alt="">
+          </div>
+          <div class="text">
+            <p class="h1">CREATING SOFTWARE SOLUTIONS
+              <br>
+              <strong>TO ACHIEVE YOUR BUSINESS GOALS</strong>
+            </p>
+            <a href="#" class="btn btn-lg btn-bordered">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="./images/media/main-slider.jpg" alt="">
+          </div>
+          <div class="text">
+            <p class="h1">CREATING SOFTWARE SOLUTIONS
+              <br>
+              <strong>TO ACHIEVE YOUR BUSINESS GOALS</strong>
+            </p>
+            <a href="#" class="btn btn-lg btn-bordered">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="./images/media/main-slider.jpg" alt="">
+          </div>
+          <div class="text">
+            <p class="h1">CREATING SOFTWARE SOLUTIONS
+              <br>
+              <strong>TO ACHIEVE YOUR BUSINESS GOALS</strong>
+            </p>
+            <a href="#" class="btn btn-lg btn-bordered">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-directions">
+        <div class="container">
+          <div class="directions-items">
+            <div class="item wow fadeIn" data-wow-delay="0s">
+              <div class="icon">
+                <img src="./images/media/icon-1.png" alt="">
+              </div>
+              <p class="title">For enterprises</p>
+              <p>We align with your established processes and build an ongoing delivery cycle. You focus on your core business.</p>
+            </div>
+            <div class="item wow fadeIn" data-wow-delay=".2s">
+              <div class="icon">
+                <img src="./images/media/icon-2.png" alt="">
+              </div>
+              <p class="title">For Emerging companies</p>
+              <p>We promptly fill your technology gap. As your business needs evolve, so does your product.</p>
+            </div>
+            <div class="item wow fadeIn" data-wow-delay=".4s">
+              <div class="icon">
+                <img src="./images/media/icon-3.png" alt="">
+              </div>
+              <p class="title">For Startups</p>
+              <p>Your software product is developed for an early market entry and faster ROI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-services">
+        <div class="items-services">
+          <div class="item-service wow fadeIn" data-wow-delay="0s">
+            <div class="image">
+              <img src="./images/media/service-1.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Construction & Engineering</h3>
+            </a>
+          </div>
+          <div class="item-service wowfadeIn" data-wow-delay=".2s">
+            <div class="image">
+              <img src="./images/media/service-2.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Tech Companies & Startups</h3>
+            </a>
+          </div>
+          <div class="item-service wow fadeIn" data-wow-delay=".4s">
+            <div class="image">
+              <img src="./images/media/service-3.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Healthcare & Wellness</h3>
+            </a>
+          </div>
+          <div class="item-service wow fadeIn" data-wow-delay="0s">
+            <div class="image">
+              <img src="./images/media/service-4.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Wholesale & Retail Trade</h3>
+            </a>
+          </div>
+          <div class="item-service wow fadeIn" data-wow-delay=".2s">
+            <div class="image">
+              <img src="./images/media/service-5.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Media & Entertainment</h3>
+            </a>
+          </div>
+          <div class="item-service wow fadeIn" data-wow-delay=".4s">
+            <div class="image">
+              <img src="./images/media/service-6.jpg" alt="">
+            </div>
+            <a href="#" class="text">
+              <h3>Transport & Logistics</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-row d-none d-md-block">
+        <div class="container">
+          <p>Want to get in touch?</p>
+          <a href="#" class="btn btn-light">contact us</a>
+        </div>
+      </div>
+
+      <div class="main-layout-bg d-none d-md-block">
+        <div class="container">
+          <div class="title-row wow fadeInRight">
+            <p class="title">HOW WE APPROACH YOUR PROJECT</p>
+            <a href="#">SOFTWARE DEVELOPMENT GUIDE ></a>
+          </div>
+
+          <div class="events-wrap">
+            <p class="title">MEET US AT EVENTS</p>
+            <div class="events">
+              <div class="event wow fadeIn" data-wow-delay="0s">
+                <p class="h3"><a href="#">CES 2019</a>
+                </p>
+                <div class="date">JAN 9-10, 2019</div>
+                <a href="#" class="btn btn-lg btn-shadow">Book a meeting</a>
+              </div>
+              <div class="event wow fadeIn" data-wow-delay=".2s">
+                <p class="h3"><a href="#">First Ever IT Conference  In Mykolaiv City</a>
+                </p>
+                <div class="date">JAN 9-10, 2019</div>
+                <a href="#" class="btn btn-lg btn-shadow">Book a meeting</a>
+              </div>
+              <div class="event wow fadeIn" data-wow-delay=".4s">
+                <p class="h3"><a href="#">First Ever IT Conference In Mykolaiv City</a>
+                </p>
+                <div class="date">JAN 9-10, 2019</div>
+                <a href="#" class="btn btn-lg btn-shadow">Book a meeting</a>
+              </div>
+            </div>
+            <div class="text-right">
+              <a href="#" class="link-all">all events ></a>
+            </div>
+          </div>
+
+          <div class="insights-wrap">
+            <p class="title">Insights</p>
+            <div class="insights">
+              <div class="insight wow fadeIn" data-wow-delay="0s">
+                <div class="image">
+                  <img src="./images/media/insight-1.jpg" alt="">
+                </div>
+                <a href="#" class="text">
+                  <span class="title">5 Technology Trends at HIMSS18 to Drive Digital Transformation in Healthcare</span>
+                </a>
+              </div>
+              <div class="insight wow fadeIn" data-wow-delay=".2s">
+                <div class="image">
+                  <img src="./images/media/insight-2.jpg" alt="">
+                </div>
+                <a href="#" class="text">
+                  <span class="title">Augmented and Mixed Reality Guide for Business</span>
+                </a>
+              </div>
+              <div class="insight wow fadeIn" data-wow-delay=".4s">
+                <div class="image">
+                  <img src="./images/media/insight-3.jpg" alt="">
+                </div>
+                <a href="#" class="text">
+                  <span class="title">MobiDev Monthly Roundup: March 2018</span>
+                </a>
+              </div>
+            </div>
+            <div class="text-right">
+              <a href="#" class="link-all">all insights ></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="blog-items">
+        <div class="blog-item wow fadeIn" data-wow-delay="0s">
+          <div class="image">
+            <img src="./images/media/blog-1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3><a href="#">ERP software development and implementation case study</a></h3>
+            <div class="hidden">
+              <p>Today's market of IoT solutions is rather fragmented in a sense. Being a launchpad for standalone business-driven innovations, it still struggles towards interoperability and unification.</p>
+              <a href="#" class="btn btn-bordered">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-item wow fadeIn" data-wow-delay=".2s">
+          <div class="image">
+            <img src="./images/media/blog-2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3><a href="#">HIPAA-compliant cross-platform solution for healthcare industry</a></h3>
+            <div class="hidden">
+              <p>Today's market of IoT solutions is rather fragmented in a sense. Being a launchpad for standalone business-driven innovations, it still struggles towards interoperability and unification.</p>
+              <a href="#" class="btn btn-bordered">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-item wow fadeIn" data-wow-delay=".4s">
+          <div class="image">
+            <img src="./images/media/blog-3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3><a href="#">IoT application development case study in automotive industry</a></h3>
+            <div class="hidden">
+              <p>Today's market of IoT solutions is rather fragmented in a sense. Being a launchpad for standalone business-driven innovations, it still struggles towards interoperability and unification.</p>
+              <a href="#" class="btn btn-bordered">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-row">
+        <div class="container">
+          <p>Want to get in touch?</p>
+          <a href="#" class="btn btn-light">contact us</a>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-top">
+            <nav class="menu-bottom">
+              <ul>
+                <li><a href="#">CASE STUDIES</a>
+                </li>
+                <li><a href="#">SERVICES</a>
+                  <ul>
+                    <li><a href="#">Mobile Apps Development</a>
+                    </li>
+                    <li><a href="#">Web Engineering</a>
+                    </li>
+                    <li><a href="#">Microsoft Web Stack Development</a>
+                    </li>
+                    <li><a href="#">Oracle Tech Stack Development</a>
+                    </li>
+                    <li><a href="#">Management & Development</a>
+                    </li>
+                    <li><a href="#">UI/UX Design</a>
+                    </li>
+                    <li><a href="#">Quality Assurance</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">INNOVATIONS</a>
+                  <ul>
+                    <li><a href="#">Hight load cloud infrastructure</a>
+                    </li>
+                    <li><a href="#">Internet of Things</a>
+                    </li>
+                    <li><a href="#">Augmented Reality</a>
+                    </li>
+                    <li><a href="#">Data Science</a>
+                    </li>
+                    <li><a href="#">Test Automation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul>
+                <li><a href="#">ABOUT US</a>
+                  <ul>
+                    <li><a href="#">Mission & values</a>
+                    </li>
+                    <li><a href="#">About us</a>
+                    </li>
+                    <li><a href="#">Our Clients</a>
+                    </li>
+                    <li><a href="#">Our Team</a>
+                    </li>
+                    <li><a href="#">Mobidev charity program</a>
+                    </li>
+                    <li><a href="#">Careers</a>
+                    </li>
+                    <li><a href="#">Outsourcing to Ukraine</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">NEWS & INSIGHTS</a>
+                  <ul>
+                    <li><a href="#">Newsroom</a>
+                    </li>
+                    <li><a href="#">Meet us on events</a>
+                    </li>
+                    <li><a href="#">Trands & insights</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="footer-contacts">
+              <p class="title">CONTACTS</p>
+              <p><strong>United States Office - Atlanta</strong>
+                <br>3855 Holcomb Bridge Rd. Suite 300, GA 30092, USA</p>
+
+              <p><strong>United Kingdom Office - Sheffield</strong>
+                <br>311 Shoreham Street, Sheffield, England, S24FA</p>
+
+              <p><strong>ENGINEERING CENTERS IN UKRAINE<br>
+
+					Kharkiv, Mykolaiv, Chernivtsi</strong>
+                <br>10 Kashuby Street, Kharkiv 61000</p>
+
+              <p><strong>
+
+						<span class="phone">Call Us: <a href="tel:+18883800276" >+1 888 380 0276</a></span>
+
+						<span class="email">Mail: <a href="mailto:info@mobidev.biz">info@mobidev.biz</a></span>
+
+					</strong>
+              </p>
+
+              <div class="sociale">
+                <ul>
+                  <li>
+                    <a href="#" target="_blank">
+                      <img src="./images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <img src="./images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <img src="./images/linkedin.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <img src="./images/upwork.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="subscribe">
+                <form>
+                  <input type="email" name="name" placeholder="Your e-mail" value="">
+                  <input class="btn btn-bordered" type="submit" value="subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p><a href="#">Privacy Policy</a>
+            </p>
+            <p class="copy">Copyright © 2009-2019. All Rights Reserved.</p>
+            <p><a href="#">Сookie Policy</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button id="up"></button>
+    </div>
+
+    <div id="bgHideAdMenu" class="hide-bg"></div>
+    <div id="bgHideSearch" class="hide-bg"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          <p class="h3">Заказать обратный звонок</p>
+          <form>
+            <input type="text" name="name" placeholder="Имя*" value="">
+            <input type="tel" name="phone" placeholder="Телефон*">
+            <div class="text-center">
+              <input class="btn" type="submit" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/jcf.js"></script>
+    <script src="./js/jcf.file.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>

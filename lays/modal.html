@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lays</title>
+
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="./css/fullpage.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <ul style="background-color:#e74810;color:#fff;padding:40px;margin:150px 0 0;">
+        <li><a href="#login" data-toggle="modal">Логин</a>
+        </li>
+        <li><a href="#registration" data-toggle="modal">Регистрация</a>
+        </li>
+        <li><a href="#results" data-toggle="modal">Результати</a>
+        </li>
+        <li><a href="#finish" data-toggle="modal">Акцію завершено.</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <!-- 1. Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo">
+              <img src="./images/logo-sm.png" alt="lays">
+            </div>
+            <div class="logo-mob">
+              <img src="./images/logo-mob-sm.png" alt="lays">
+            </div>
+            <p class="h3">Вхід</p>
+          </div>
+          <div class="modal-body">
+            <div class="message">
+              <p><span class="warning">Увага!</span> Щоб твій голос було зараховано і ти мав змогу взяти участь у розіграшах призів, будь ласка, авторизуйся або зареєструйся.</p>
+            </div>
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="tel" name="tel" placeholder="+38 (xxx) xxx xx xx" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="pass" placeholder="Пароль*">
+                </div>
+                <input class="btn" type="submit" value="Увiйти">
+                <div class="recovery-link">
+                  <a href="#">Забули пароль?</a>
+                </div>
+                <a href="#" class="btn btn-style-2">Зареєструватися</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Регистрация -->
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo">
+              <img src="./images/logo-sm.png" alt="lays">
+            </div>
+            <div class="logo-mob">
+              <img src="./images/logo-mob-sm.png" alt="lays">
+            </div>
+            <p class="h3">Реєстрація</p>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" name="your-name" placeholder="ім’я" value="">
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="your-tel" placeholder="+38 (xxx) xxx xx xx" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="your-pass" placeholder="Пароль*">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="your-mail" placeholder="e-mail" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="your-pass2" placeholder="Пароль*">
+                </div>
+
+                <div class="form-group checkbox">
+                  <input type="checkbox" name="terms" id="terms">
+                  <label for="terms">я погоджуюсь з офіційними правилами та даю згоду на обробку своїх даних</label>
+                </div>
+                <div class="form-group checkbox">
+                  <input type="checkbox" name="terms2" id="terms2">
+                  <label for="terms2">я погоджуюсь з умовами використання</label>
+                </div>
+
+                <input class="btn btn-style-2" type="submit" value="Зареєструватися">
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Результати -->
+    <div class="modal fade" id="results" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="logo">
+              <img src="./images/logo-sm.png" alt="lays">
+            </div>
+            <div class="logo-mob">
+              <img src="./images/logo-mob-sm.png" alt="lays">
+            </div>
+            <p class="h5">Результати щоденних розіграшів місячного запасу Lay’s, а також щотижневих розіграшів зіркових гаджетів.</p>
+          </div>
+          <div class="modal-body">
+            <div class="results">
+              <div class="nav" role="tablist">
+                <a class="active" data-toggle="tab" href="#tab-1" role="tab" aria-selected="true">МІСЯЧНИЙ ЗАПАС LAY’S</a>
+                <a class="" data-toggle="tab" href="#tab-2" role="tab" aria-selected="false">ЗІРКОГАДЖЕТИ</a>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                  <div class="scroll-box">
+                    <table>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                  <div class="scroll-box">
+                    <table>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>Машина Ирина</td>
+                      </tr>
+                      <tr>
+                        <td>02.09.2019</td>
+                        <td>SMS/Telegram/Viber - Користувач</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Введений код неправильний -->
+    <div class="modal fade" id="finish" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <p class="h2 warning">УВАГА!</p>
+            <p class="h4 warning">Акцію завершено.</p>
+          </div>
+          <div class="modal-body">
+            <p class="h4">Дивись результати
+              <br>розіграшів у розділі</p>
+            <a href="#" class="btn btn-style-2 btn-icon">Призи та переможці
+
+					<span class="icon">
+
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="28" height="24" viewBox="0 0 28 24">
+
+							<path d="M-0.000,24.000 C-0.000,24.000 4.544,18.359 9.000,15.000 C13.835,11.356 16.000,12.000 16.000,12.000 L18.000,19.000 L28.000,3.000 L9.000,0.000 L13.000,6.000 C13.000,6.000 8.927,7.458 5.000,11.000 C0.124,15.398 -0.000,24.000 -0.000,24.000 Z"/>
+
+						</svg>
+
+					</span>
+
+				</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>
